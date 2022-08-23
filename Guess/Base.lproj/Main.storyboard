@@ -44,20 +44,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vst-QU-j6X">
+                                <rect key="frame" x="598.33333333333337" y="324" width="193.66666666666663" height="50"/>
+                                <color key="tintColor" red="0.49089884020000002" green="0.1155864191" blue="0.1311325747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ABOUT &gt;&gt;&gt;">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Yjm-tC-5vz" kind="show" id="64S-Tq-Yav"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="VQf-gh-1Pt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4O7-3u-HQM"/>
+                            <constraint firstItem="Vst-QU-j6X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="4yD-tF-ol1"/>
                             <constraint firstItem="5iy-mp-94C" firstAttribute="top" secondItem="VQf-gh-1Pt" secondAttribute="bottom" constant="20" id="7jO-FC-zvO"/>
                             <constraint firstItem="HVJ-Ai-5Sp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D37-BD-XZg"/>
                             <constraint firstItem="VQf-gh-1Pt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FkR-bh-tam"/>
                             <constraint firstItem="VQf-gh-1Pt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HKs-wI-vWx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VQf-gh-1Pt" secondAttribute="trailing" constant="20" id="R8a-Dw-JQf"/>
                             <constraint firstItem="5iy-mp-94C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dic-Jh-a67"/>
+                            <constraint firstAttribute="trailing" secondItem="Vst-QU-j6X" secondAttribute="trailing" constant="20" id="qnj-xN-20D"/>
                             <constraint firstItem="VQf-gh-1Pt" firstAttribute="top" secondItem="HVJ-Ai-5Sp" secondAttribute="bottom" constant="20" id="wgi-N8-Oju"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="v02-o4-INh"/>
                     <connections>
                         <outlet property="label" destination="HVJ-Ai-5Sp" id="trB-EP-Vl8"/>
                         <outlet property="slider" destination="VQf-gh-1Pt" id="kcr-xB-aLX"/>
@@ -67,10 +81,45 @@
             </objects>
             <point key="canvasLocation" x="35" y="87"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="4pM-Dd-DHg">
+            <objects>
+                <viewController id="Yjm-tC-5vz" customClass="SecondViewController" customModule="Guess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Erb-wm-k7z">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uI-TW-rAI">
+                                <rect key="frame" x="327.66666666666669" y="165" width="156.66666666666669" height="45.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;&lt;&lt; BACK">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jix-Ec-PEu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i4h-rf-tAr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8uI-TW-rAI" firstAttribute="centerX" secondItem="Erb-wm-k7z" secondAttribute="centerX" id="czV-KM-mdk"/>
+                            <constraint firstItem="8uI-TW-rAI" firstAttribute="centerY" secondItem="Erb-wm-k7z" secondAttribute="centerY" id="mIj-pa-ZSG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lLV-M3-LyP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5E-tT-Eql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="86"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1.square.fill" catalog="system" width="128" height="114"/>
         <image name="50.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

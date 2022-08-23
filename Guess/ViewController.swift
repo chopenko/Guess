@@ -9,13 +9,36 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    override func loadView() {
+        super.loadView()
+        print("loadView")
+        let versionLabel = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height: 20))
+        versionLabel.text = "V.1.1"
+        self.view.addSubview(versionLabel)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
         self.number = Int.random(in: 1...50)
         self.label.text = "Your goal: " + String(self.number)
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDidDisappear")
+    }
+    
     var number: Int = Int.random(in: 1...50)
     var round: Int = 1
     var points: Int = 0

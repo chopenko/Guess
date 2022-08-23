@@ -14,6 +14,7 @@
 		391C9FBD28AE30F500E2F849 /* Guess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 391C9FBB28AE30F500E2F849 /* Guess.xcdatamodeld */; };
 		391C9FBF28AE30F700E2F849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391C9FBE28AE30F700E2F849 /* Assets.xcassets */; };
 		391C9FC228AE30F700E2F849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391C9FC028AE30F700E2F849 /* LaunchScreen.storyboard */; };
+		39F8195328B4DC24007FEEE9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8195228B4DC24007FEEE9 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		391C9FBE28AE30F700E2F849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		391C9FC128AE30F700E2F849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		391C9FC328AE30F700E2F849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F8195228B4DC24007FEEE9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				391C9FB228AE30F500E2F849 /* AppDelegate.swift */,
 				391C9FB428AE30F500E2F849 /* SceneDelegate.swift */,
 				391C9FB628AE30F500E2F849 /* ViewController.swift */,
+				39F8195228B4DC24007FEEE9 /* SecondViewController.swift */,
 				391C9FB828AE30F500E2F849 /* Main.storyboard */,
 				391C9FBE28AE30F700E2F849 /* Assets.xcassets */,
 				391C9FC028AE30F700E2F849 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				391C9FB728AE30F500E2F849 /* ViewController.swift in Sources */,
 				391C9FBD28AE30F500E2F849 /* Guess.xcdatamodeld in Sources */,
 				391C9FB328AE30F500E2F849 /* AppDelegate.swift in Sources */,
+				39F8195328B4DC24007FEEE9 /* SecondViewController.swift in Sources */,
 				391C9FB528AE30F500E2F849 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
