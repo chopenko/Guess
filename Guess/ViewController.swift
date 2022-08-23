@@ -8,15 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("viewDidLoad")
+        self.number = Int.random(in: 1...50)
+        self.label.text = "Your goal: " + String(self.number)
+    }
 
     var number: Int = Int.random(in: 1...50)
-    var round: Int = 0
+    var round: Int = 1
     var points: Int = 0
     
     @IBOutlet var label: UILabel!
     @IBOutlet var slider: UISlider!
     @IBAction func checkNumber() {
-        self.label.text = "Your goal: " + String(self.number)
+        
 //        if self.round == 0 {
             // self.number = Int.random(in: 1...50) // NUM
             // self.label.text = "Your goal: " + String(self.number)
@@ -47,11 +54,11 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             self.round = 1
             self.points = 0
-            self.number = Int.random(in: 1...50)
-            // self.label.text = "Your goal: " + String(self.number)
         } else {
             self.round += 1
         }
+        self.number = Int.random(in: 1...50)
+        self.label.text = "Your goal: " + String(self.number)
     }
     
     
