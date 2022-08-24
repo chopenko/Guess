@@ -83,7 +83,12 @@ class ViewController: UIViewController {
         self.number = Int.random(in: 1...50)
         self.label.text = "Your goal: " + String(self.number)
     }
-    
+    @IBAction func showNextScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
+        // let viewController = SecondViewController()
+        self.present(viewController, animated: true, completion: nil)
+    }
     
 
 }

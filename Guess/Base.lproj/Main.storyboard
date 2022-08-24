@@ -52,7 +52,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Yjm-tC-5vz" kind="show" id="64S-Tq-Yav"/>
+                                    <action selector="showNextScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ff1-tQ-hna"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,7 +84,7 @@
         <!--Second View Controller-->
         <scene sceneID="4pM-Dd-DHg">
             <objects>
-                <viewController id="Yjm-tC-5vz" customClass="SecondViewController" customModule="Guess" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="Yjm-tC-5vz" customClass="SecondViewController" customModule="Guess" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Erb-wm-k7z">
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,7 +96,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="jix-Ec-PEu"/>
+                                    <action selector="hideCurrentScene" destination="Yjm-tC-5vz" eventType="touchUpInside" id="bqx-ce-ahg"/>
                                 </connections>
                             </button>
                         </subviews>
