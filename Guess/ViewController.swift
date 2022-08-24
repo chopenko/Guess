@@ -43,6 +43,14 @@ class ViewController: UIViewController {
     var round: Int = 1
     var points: Int = 0
     
+    lazy var secondViewController: SecondViewController = getSecondViewController()
+    
+    private func getSecondViewController() -> SecondViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
+        return viewController as! SecondViewController
+    }
+    
     @IBOutlet var label: UILabel!
     @IBOutlet var slider: UISlider!
     @IBAction func checkNumber() {
@@ -84,10 +92,10 @@ class ViewController: UIViewController {
         self.label.text = "Your goal: " + String(self.number)
     }
     @IBAction func showNextScreen() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
-        // let viewController = SecondViewController()
-        self.present(viewController, animated: true, completion: nil)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
+//        // let viewController = SecondViewController()
+        self.present(secondViewController, animated: true, completion: nil)
     }
     
 
