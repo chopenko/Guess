@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad")
         // creating game entity
         game = Game(startValue: 1, endValue: 50, rounds: 5)
         // updating label
